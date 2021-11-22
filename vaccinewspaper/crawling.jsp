@@ -44,8 +44,8 @@
 		}
 		
 		//웹 크롤링 부분
-		//인사이트 홈페이지 열기
-		Document doc = Jsoup.connect("https://www.insight.co.kr/").post();
+		//홈페이지 열기
+		Document doc = Jsoup.connect("").post();
 		//메인 페이지의 기사 리스트 가져오기
 		Elements list = doc.select("body > div.content > div > div > div.content-main > div.main-politics > div.main-politics-right > ul > li");
 		
